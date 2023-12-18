@@ -1,0 +1,12 @@
+/* exterrnal styling */
+
+h1{
+    color:blue
+}
+p{
+    color: brown;   
+}
+
+#heading{
+    border: solid 2px;
+}

@@ -1,0 +1,154 @@
+
+
+/* 
+the ways to add style to html element
+1)External CSS i.e. external file linked to html file
+2) Internal CSS targeting various selectors using style tag
+3) Inline CSS attached to that particular html element which is given that style
+
+a) Inline style has highest priority unless important tag is added 
+b)the css style added at the last is given higher priority 
+   i.e. the style given at the end will prevail.
+c) there is no competition thing in internal css vs externsl css,
+ which ever is added later will prevail over other
+*/
+
+/* 
+CSS Selector
+1) Element Selector
+2)Id selector
+3)Class selector
+*/
+
+
+
+/* priority among css selectors
+1) Id Selector > 2) Class Selector > 3) Element Selector
+
+*/
+
+/* Element Selector */
+h1{
+    color:rgb(15, 7, 234);
+    font-size: xx-large;  
+}
+
+
+/* Id Selector */
+
+/* #p3{
+    color:purple
+} */
+
+
+/* Class Selector */
+
+.common{
+    color: orange    /* fdgfdb*/
+}
+
+#header{
+    font-size: 50px;
+}
+
+.underline-h{
+    text-decoration: underline;
+}
+
+
+
+/* In CSS Colors can be specified using
+:) predefined color names ===> 140 colors
+:)RGB     (RED, GREEN, BLUE) ===> (0,255,255)
+:)RGBA   (RED, GREEN, BLUE, ALPHA) ===> (0,255,255, 0 to 1) ==> alpha for transparency (255, 99, 71, 0.5)
+:)HEX  #rrggbb two digits for each color (total 6 digits), uses hexadecimal
+:)HSL (hue, saturation, lightness)
+:)HSLA (hue, saturation, lightness, alpha)
+*/
+
+#bg{
+    background-image: url(./ind_files/png.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+body{
+    border:  10px dotted red;
+    height: auto;
+}
+#brdr{
+    border-style: solid;  /*top right bottom left border styles*/
+    border-width: 2px 1px 1px .125rem;
+    border-color: red yellow  blue brown;
+    border-radius: 40px 20px 50px 60px;
+
+    /* in order to give border to any one side use directions for e.g, 
+     border-top-style:solid;
+     border-top-width:2px;
+     border-top-color-black;
+     etc
+     similarly border-top-left-radius
+    */
+}
+/* body {
+    background-color: red;
+} */
+
+/* adding img to background ==> create img folder with multiple imgages them give url for img 
+
+in order to add multiple images to background, give multiple urls seperated by comma and their relative
+position in background position property. for e.g.
+bckgrnd-img: url(1.png), url(2.png)
+bckgrnd-pstn: top left , bottom right
+*/
+
+
+/* Borders */
+/* in order to give border to any one side use directions for e.g, 
+     border-top-style:solid;
+     border-top-width:2px;
+     border-top-color-black;
+     etc
+     similarly border-top-left-radius
+    */
+
+
+/* height and width of div, by default it is auto */
+    #div3{
+        background-color: orange;
+        height:50% ;
+        width: 50%;  /*percentage is wrt to parent element*/
+        max-width: 500px;  /*if size of the browser not fixed*/
+        max-height: 500px;
+        min-width:300px;
+        min-height: 300px;
+    }
+
+
+
+    /* Padding ==>Gap between content and border is padding */
+
+    #padding{
+        border: 1px solid red;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+
+    /* Marging ===>> space outside border where other element can not come is called margin */
+    .margin{
+        border: 1px solid red;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top:50px;
+        margin-bottom: 10px;
+        margin-left:10%;
+        margin-right: 10%;
+    }

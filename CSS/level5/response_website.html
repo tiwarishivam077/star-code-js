@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+
+    <style>
+        *{
+            margin: 5px; padding: 0;
+            font-size: 15px;
+        }
+        #first{
+            background-color: red;
+            height: 100px;
+            width: 200px;
+            margin: 0px; padding: 0;
+        }
+        #second{
+            background-color: royalblue;
+            margin: 0px; padding: 0;
+            width: 50%;
+            height: 50%;
+        }
+
+        #third{
+            background-color: red;
+            height: 250px;
+            width: 250px;
+            font-size: 20px;  
+        }
+        
+        #fourth{
+            background-color: yellow;
+            height: 50%;
+            width: 50%;
+            font-size: 2em;
+            margin: 20px;
+        }
+        #fifth{
+            background-color: red;
+            height: 250px;
+            width: 250px;
+            font-size: 20px;  
+        }
+        #sixth{
+            background-color: blanchedalmond;
+            height: 200px;
+            width: 200px;
+            font-size: 2rem;    
+        }
+        #seventh{
+            background-color: blanchedalmond;
+            /* height: 50vh;  50% of visible screen height */
+            /* width: 90vw; 0% of visible screen width */
+            height: 50vh;
+            width: 90vw;
+            font-size: 2rem;  
+        }
+    </style>
+</head>
+<body>
+    <p>Adaptive Layout for different screen size</p>
+    <p>Optimizes images and assets</p>
+    <p>Enhances user experience on mobile and desktop</p>
+    <h1>Relative units</h1>
+
+    <h3>1) Percentage</h3>
+    <div id="first">
+        First Div<div id="second">Second Div</div>
+    </div>
+<p>Inspect percentage property using dev tools and code base</p>
+
+
+
+    <h3>2) Em ==>  Relative Font Size wrt to Parent element</h3>
+    <div id="third">
+        Third Div<div id="fourth">Fourth Div</div>
+    </div>
+    <p>parent div Fourth has font size as 20px ==> child div has font-size as 2em i.e twice the font size of the parent element</p>
+
+    <h3>3) Rem ==>  Relative Size wrt to Root element rem = Root em</h3>
+
+    <div id="fifth">
+        Fifth Div<div id="sixth">Sixth Div</div>
+    </div>
+    <p>Here the font size of sixth div is 2rem that is twice of root element ==> if you change the font size of root element ===> the size of sixth div will change proportionately  ==> try and inspect</p>
+<hr>
+    <h3>3) VW/VH ==>  Viewport Relative Units height and idth for responsive website  ==> the total area visible on screen is called as view port  ==> VH = viewport height, VW = viewport width</h3>
+    <div id="seventh">
+        Seventh Div
+    </div>
+</body>
+</html>

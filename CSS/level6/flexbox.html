@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+       *{
+            margin: 0; padding: 0;
+        }
+        #container1{
+            background-color:rgb(168, 116, 37);
+            height: 300px;
+            display: flex;
+            flex-direction:  row;
+            margin-bottom:25px;
+            justify-content: flex-start;
+        }
+        #container2{
+            background-color:rgb(132, 130, 143);
+            height: 300px;
+            display: flex;
+            flex-direction:  row;
+            margin-bottom:25px;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        #container3{
+            background-color:rgb(13, 217, 57);
+            height: 300px;
+            display: flex;
+            flex-direction:  row;
+            margin-bottom:25px;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+        #container4{
+            background-color:rgb(149, 217, 13);
+            height: 300px;
+            display: flex;
+            flex-direction:  row;
+            margin-bottom:25px;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: center;
+        }
+        #container5{
+            background-color:rgb(222, 21, 21);
+            height: 300px;
+            display: flex;
+            flex-direction:  column;
+            margin-bottom:25px;
+            /* justify-content: space-between;
+            justify-content: space-around; */
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        }
+        #container6{
+            background-color:rgb(150, 130, 130);
+            height: 300px;
+            display: flex;
+            flex-direction:  row;
+            margin-bottom:25px;
+            /* justify-content: space-between;
+            justify-content: space-around; */
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            /* align-content: center; */
+        }
+        .box{
+            width:200px;
+            height:100px;
+            background-color:aqua;
+            margin:5px;
+            border: solid 1.0px black;
+        }
+    </style>
+</head>
+<body>
+    <p> 1) Flexbox => 1D layout ==> arrange items in rows or columns
+    </p>
+    <p> 2) Items flex/expand to fill additional space or shrink to fit into smaller space</p>
+    <p> 3) Flexbox is a container which contains items in a row/column  ==> these items are arranged in row/column</p>
+    <p>4) In a flexbox container ==> main axis is horizontal and cross axis is vertical  by default, items are arranged horizontally by default, If we change the direction of arrangement of the box the main and cross axis changes accordingly
+    </p>
+    <h1 style="text-align: center;">Container 1</h1>
+    <div id="container1">
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <!-- <div class="box">11</div> -->
+        <!-- <div class="box">12</div> -->
+    </div>
+    <h1 style="text-align: center;">Container 2</h1>
+    <div id="container2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <!-- <div class="box">11</div> -->
+        <!-- <div class="box">12</div> -->
+    </div>
+    <h1 style="text-align: center;">Container 3</h1>
+    <div id="container3">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <!-- <div class="box">11</div> -->
+        <!-- <div class="box">12</div> -->
+    </div>
+
+
+
+    <h1 style="text-align: center;">Container 4</h1>
+    <div id="container4">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <!-- <div class="box">11</div> -->
+        <!-- <div class="box">12</div> -->
+    </div>
+    <h1 style="text-align: center;">Container 5</h1>
+    <div id="container5">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <!-- <div class="box">11</div> -->
+        <!-- <div class="box">12</div> -->
+    </div>
+    <h1 style="text-align: center;">Container 6</h1>
+    <div id="container6">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <!-- <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div> -->
+        <!-- <div class="box">11</div> -->
+        <!-- <div class="box">12</div> -->
+    </div>
+</body>
+</html>

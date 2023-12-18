@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Flexbox</title>
+
+    <style>
+        *{
+            margin:0; 
+            padding: 0;
+        }
+
+        #header{
+            background-color:blanchedalmond ;
+            height: auto;
+            width: auto;
+            margin: 5px;
+        }
+        #container{
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: wheat;
+        }
+
+        .box{
+            height: 60px;
+            width:300px;
+            background-color: aqua;
+            margin: 10px;
+            border: solid 1px black;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 style="text-align: center;">Navigation Tabs</h1>
+    </div>
+    <div id="container">
+        
+        <div class="box">Battery Distribution Route Map
+            <p style="font-size: small;">Shows all the routes from various Depot Stations</p>
+        </div>
+        <div class="box">Vehicle Routes Schedule
+            <p style="font-size: small;">Shows  the routes assigned to  various  vehicles at a Depot Stations</p>
+        </div>
+        <div class="box">Daily Vehicle Route
+            <p style="font-size: small;">Show Routes for the Vehicles on a particular day</p>
+        </div>
+        <div class="box">Battery Status
+            <p style="font-size: small;">Show details of all the batteries</p>
+        </div>
+        <div class="box">Battery Charging State 
+            <p style="font-size: small;">Show the states of the batteries</p>
+               </div>
+        <div class="box">Battery Details
+            <p style="font-size: small;">Show Details of a particular battery</p>
+        </div>
+        <div class="box">Battery Driver Location
+            <p style="font-size: small;">Locates all the Battery Drivers and shows status of the delivery process</p>
+        </div>
+        <div class="box">Tab 8</div>
+        <div class="box">Tab 9</div>
+        <div class="box">Tab 10</div>
+    </div>
+</body>
+</html>

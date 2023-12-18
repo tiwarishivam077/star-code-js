@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+             background-color: blanchedalmond ;
+             padding: 0.5rem;
+             height: 1.5rem;
+         }
+        a{
+            margin-right:3rem;
+            text-decoration: none;
+        }
+        #home{
+            margin-left: 17rem;
+        }
+        #second{
+            height: 30px;
+            width: 30px;
+            background-color: green;
+            margin-left: 37rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            display: inline-block;
+            background-color: violet;
+            height: 5rem;
+            width: 5rem;
+            padding-top:3rem;
+            padding-left: 2.5rem;
+        }
+        #container{
+            border: 3px solid black;
+        }
+        #box1{
+          margin: 0.5rem 2rem 0.5rem 4rem
+        }
+        #box2{
+        margin-right:2rem;
+        
+        z-index: 2;
+       }
+       #box4{
+         position: fixed;
+         right:20px;
+         bottom: 240px;
+       }
+       #bottom{
+        height:20vh;
+        width:100vh;
+        background-color: burlywood;
+       }
+
+       footer{
+        position: fixed;
+        bottom: 1px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a  id="home" href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Courses</a>
+            <a href="">Contact</a>
+            <a href="">Pages</a>
+            <a href="">DLP</a>
+            <a href="">Career with Us</a>
+        </nav>
+    </header>
+    <main>
+        <div id="second"></div>
+           <div id="container">
+            <div id="box1"  class="box">Box1</div>
+            <div id="box2" class="box">Box2</div>
+            <div id="box3" class="box">Box3</div>
+           </div>
+           <div id="box4" class="box">Box4</div>
+
+           <div id="bottom">Box</div>
+           
+    </main>
+    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis, laudantium voluptate numquam incidunt ducimus reiciendis ad aut saepe doloremque harum provident dicta debitis. Iste corrupti fugiat blanditiis illum accusamus eaque dolore dignissimos, ipsam error voluptate natus, cupiditate repudiandae sit autem enim qui maxime assumenda iusto ab veniam quae nemo.</footer>
+</body>
+</html>

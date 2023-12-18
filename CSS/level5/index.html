@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property  ==> Block/Inline Elements</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            text-align: center;
+            border: .3125rem solid black;
+            border-radius: 10px;
+
+            display: block;
+        }
+        .Newbox{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            text-align: center;
+            border: .3125rem solid black;
+            border-radius: 10px;
+            display: inline;
+        }
+        .case3{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            text-align: center;
+            border: .3125rem solid black;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .display_none{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            text-align: center;
+            border: .3125rem solid black;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        #InvisibleBox{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Block Element occupy entire space in the line i.e ==> DIV,P, H1, UL, LI they start with a new line ==> default display property is block</p>
+    <p>Inline element occupy only the space which is required i.e. span, anchor tag i.e. a, button. there is no new line b/w elements, there size can not be set easily ==> their default display property is inline</p>
+
+    <p>Display Property is of two types ==> inline and block, Let's Practice</p>
+
+
+    <h1>Case 1</h1>
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+    <p>Right Now the display property of all three div boxes is block ==> since default value is block itself ==> no difference in display</p>
+    <p>Let's change the display property</p>
+    <h1>Case 2</h1>
+    <div class="Newbox">Box4</div>
+    <div class="Newbox">Box5</div>
+    <div class="Newbox">Box6</div>
+
+    <p>In this case the display property is inline ==> the div boxes are restricted in the line, the height and width property is difficult to set ==> inspect these boxes ==> you will find that their height and width is disabled</p>
+
+    <h1>Case 3</h1>
+    <div class="case3">Box7</div>
+    <div class="case3">Box8</div>
+    <div class="case3">Box9</div>
+
+    <p>In this case we have used display property as inline-block ==> with inline-block ==> we display block elements in one line and also set their height and width property easily</p>
+
+    <p>Conclusion ==> display property ==> inline, block, inline-block and none</p>
+
+    <p>Let's read about display none property</p>
+    <h1>Display None property Case 4</h1>
+    <div class="display_none">Box 10</div>
+    <div  id="InvisibleBox" class="display_none">Box 11</div>
+    <div class="display_none">Box 12</div>
+    <p>for Box 11 we have set ==> display property as <b>None ===> when we set display property for any element as none ==> that element disappers from the DOM tree, one can see Box 11 is not available in the DOM by inspection ==> toggle the display none property</b></p>
+</body>
+</html>
