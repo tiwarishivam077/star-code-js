@@ -18,8 +18,8 @@ function x(y){
 }
 
 x(function y(){   // here func y is passed inside  func x ==> y is callback function here
-                  // it is c/a callback functn ==> it is passsed inside x, now it can be called at any time &
-})               // anywhere in functn x, ==>func y is not called at the moment, i.e responsbility of func y is given to functn x
+                  // it is c/a callback func ==> it is passed inside x, now it can be called at any time &
+})               // anywhere in func x, ==>func y is not called at the moment, i.e responsbility of func y is given to func x
       // now it is upto x when it wants to invoke func y i.e func y can be called back some time later in the code
 
 // let's now see, how callback functions are used in asynchronous task using setTimeOut function
@@ -33,7 +33,7 @@ x(function y(){   // here func y is passed inside  func x ==> y is callback func
 // hence we can say, callback functions give the power of asynchronousity,
  //in setTimeOut what is to be done after 5seconds, we passsed that piece of code as callback func
 //  it will be later executed
-// now it move to next part of code, i.e. func definition of a,  execute a(), will pass func y()
+// now it move to next part of code, i.e. func definition of a,  execute a(), will pass func b()
 //  as callback func to a(), code executes in this manner, after 5 seconds expire, setTimeOut
 // callback function is executed, check in the browser
 
