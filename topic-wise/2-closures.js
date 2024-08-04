@@ -148,3 +148,5 @@ function temp(){
     }
 }
 temp();
+
+// Hence closures are clear
